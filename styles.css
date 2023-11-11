@@ -430,6 +430,11 @@ Community Pick
   align-items: center;
 }
 
+.pick__community--sub-title{
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
 .pick__community__video--wrapper {
   width: 100%;
   height: 200px;
