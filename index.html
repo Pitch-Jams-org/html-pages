@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-cB9YABdWBcZE8fSn1Pq6JpzFf4llfJ5qNOIQ9hBL5aQQl2fOCJwUmhL8xF6N5N2t" crossorigin="anonymous">
+    <script src="./index.js" defer></script>
 
 </head>
 <body>
     <nav>
         <div class="nav--container">
+            <figure class="nav--logo">
+                <img src="./PitchJamsLogo.png" alt="" class="logo">
+            </figure>
+            <div class="nav__links--wrapper">
         <div class="nav--links">
             <a href="" class="nav__link">HOME</a>
             <a href="" class="nav__link">COMMUNITY</a>
@@ -26,17 +31,22 @@
             <p> <p class="vertical"> | </p> &nbsp;&nbsp; <i class="fas fa-arrow-right"></i> </p>
         </div>
     </div>
+    </div>
     </nav>
     <main>
         <header>
             <div class="header--container">
-                <div class="video--wrapper">
+                <div class="header__video--wrapper">
                     <iframe class="video" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </div>
                 <div class="header--browse--options">
                     <button class="btn--present">Present My Pitch!</button>
                     <div class="input--wrapper">
-                        <input type="text" class="search-pitch">
+                        <i class="fas fa-search"></i>
+
+                        <input type="text" id="text" class="search--pitch">
+                        <button class="btn__times" onclick="clearInput()"><i class="fas fa-times"></i></button>
+
                     </div>
                     <div class="header--categories">
                         <button class="header__category">AI</button>
@@ -183,6 +193,31 @@
             </div>
         </div>
         </div>
+        </section>
+        <section id="pitch-to-pick">
+            <h2 class="section__title">Which Pitch Do You Pick</h2>
+            <hr class="line">
+            <div class="section--container">
+                <div class="pick__community--a">
+                    <div class="pick__community__video--wrapper">
+                    <iframe class="video pick__community--video" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p class="votes">356</p>
+                </div>
+                    <p class="video__title">An Animal Blog Platform</p>
+                    <button class="btn__vote">Vote</button>
+                </div>
+                <figure class="versus--wrapper">
+                    <img src="./PitchJamsVS_1.png" alt="" class="versus">
+                </figure>
+                <div class="pick__community--b">
+                    <div class="pick__community__video--wrapper">
+                    <iframe class="video pick__community--video" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p class="votes">298</p>
+                </div>
+                    <p class="video__title">A Social Networking Site</p>
+                    <button class="btn__vote">Vote</button>
+                </div>
+            </div>
         </section>
     </main>
 </body>
