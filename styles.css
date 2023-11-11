@@ -61,6 +61,12 @@ img {
   color: #000;
   font-size: 24px;
   font-style: italic;
+  padding: 12px;
+  transition: all 300ms ease-in-out;
+}
+
+.nav__link:hover{
+    background-color: rgba(200, 200, 3, 0.325);
 }
 
 .nav--profile--wrapper {
@@ -379,14 +385,8 @@ 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
 
 .fa-eye {
   margin-right: 8px;
-  background-color: lightblue;
   border: none;
-  border-radius: 50px;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .like,
